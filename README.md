@@ -2,10 +2,10 @@
 
 ## Initial Setup
 
-* Fork this repo into your Github account
-* `git clone git@github.com:MYUSER/training-deploy-project.git`
-* Open in your favorite text editor. ie: `cd training-deploy-project && code ./`
-* Find all occurences of **DOCKER_HUB_USER_CHANGE_ME** and replace it with your Docker Hub user name
+- Fork this repo into your Github account
+- `git clone git@github.com:MYUSER/training-deploy-project.git`
+- Open in your favorite text editor. ie: `cd training-deploy-project && code ./`
+- Find all occurences of **dobri1408** and replace it with your Docker Hub user name
 
 ## Setup backend
 
@@ -17,6 +17,7 @@ make build
 ```
 
 Run the Plone Backend instance
+
 ```shell
 make start
 ```
@@ -36,6 +37,7 @@ npm init yo @plone/volto
 ```
 
 Answer the questions:
+
 ```
 Project name (e.g. my-volto-project) frontend
 Would you like to add addons? True
@@ -43,13 +45,13 @@ Addon name, plus extra loaders, like: volto-addon:loadExtra,loadAnotherExtra vol
 Would you like to add another addon? false
 ```
 
-Edit ```frontend/package.json``` and change ```"@plone/volto": "13.15.1",``` to ```"@plone/volto": "14.0.0-node16",```
+Edit `frontend/package.json` and change `"@plone/volto": "13.15.1",` to `"@plone/volto": "14.0.0-node16",`
 
-And run ```cd frontend && yarn```
+And run `cd frontend && yarn`
 
 Start it with
 
-```yarn start```
+`yarn start`
 
 ## Running everything with docker
 
